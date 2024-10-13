@@ -19,7 +19,7 @@ class EBook(Book):
 class PrintBook(Book):
 
     def __init__(self, title, author, page_count):
-        super().__init__(title,author)  # Call parent class constructor
+        super().__init__(title,author)
         self.page_count = page_count
 
     def __str__(self):
@@ -28,7 +28,7 @@ class PrintBook(Book):
 class Library :
 
     def __init__(self, books):
-        self.books = books
+        self.books = []
     
     def add_book(self, book):
         return self.books.append(book)
